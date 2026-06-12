@@ -1,11 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Happy Birthday Bhai 🎉</title>
-
-<style>
+<title>Happy 1st Birthday Jyotiraditya ❤️</title><style>
 *{
 margin:0;
 padding:0;
@@ -15,21 +12,25 @@ font-family:Arial,sans-serif;
 
 body{
 background:linear-gradient(135deg,#0f172a,#1e293b);
-overflow:hidden;
-height:100vh;
 color:white;
 text-align:center;
+overflow-x:hidden;
+min-height:100vh;
+padding-bottom:50px;
 }
 
 .container{
 position:relative;
 z-index:10;
-padding-top:50px;
+padding:30px 15px;
+max-width:900px;
+margin:auto;
 }
 
 h1{
 font-size:3rem;
 animation:glow 2s infinite alternate;
+margin-bottom:20px;
 }
 
 @keyframes glow{
@@ -38,13 +39,6 @@ to{
 color:gold;
 text-shadow:0 0 20px gold;
 }
-}
-
-#message{
-max-width:700px;
-margin:30px auto;
-font-size:1.3rem;
-padding:15px;
 }
 
 .cake{
@@ -98,6 +92,15 @@ from{transform:scale(1);}
 to{transform:scale(1.3);}
 }
 
+.message{
+background:rgba(255,255,255,0.08);
+padding:25px;
+border-radius:20px;
+line-height:1.8;
+font-size:1.15rem;
+margin-top:20px;
+}
+
 .balloon{
 position:absolute;
 bottom:-100px;
@@ -138,52 +141,66 @@ border:none;
 border-radius:10px;
 cursor:pointer;
 background:gold;
+margin-top:15px;
 }
-</style>
-</head>
-
-<body>
-
-<div id="balloons"></div>
-<div id="fireworks"></div>
-
-<div class="container">
-
-<h1>🎉 Happy Birthday Brother 🎉</h1>
-
-<div class="cake">
+</style></head><body><div id="balloons"></div>
+<div id="fireworks"></div><div class="container"><h1>🎉 Happy 1st Birthday Jyotiraditya 🎉</h1><div class="cake">
 <div class="bottom"></div>
 <div class="top"></div>
 <div class="candle">
 <div class="flame"></div>
 </div>
-</div>
-
-<p id="message"></p>
-
-<button onclick="playMusic()">🎵 Play Music</button>
+</div><button onclick="playMusic()">🎵 Play Music</button>
 
 <audio id="music" loop>
 <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
-</audio>
+</audio><div class="message">❤️ <b>My Dearest Jyotiraditya,</b> ❤️
 
-</div>
+<br><br>
 
-<script>
+Happy 1st Birthday, my little brother. 🎂🎈
 
-const text =
-"Happy Birthday Bhai! 🎂 Thank you for always supporting and guiding me. May your life be filled with happiness, success, good health and unforgettable memories. Have an amazing birthday! ❤️";
+<br><br>
 
-let i = 0;
+One year ago, you entered our lives, and without saying a single word, you changed everything. You filled our home with laughter, warmth, and a kind of love that only a little brother can bring.
 
-function typeWriter(){
-if(i < text.length){
-document.getElementById("message").innerHTML += text.charAt(i);
-i++;
-setTimeout(typeWriter,50);
-}
-}
-typeWriter();
+<br><br>
+
+When I look at you, with your innocent smile and those beautiful eyes that seem full of wonder, I realize how quickly time has passed. It feels like only yesterday that I first held you in my arms, afraid to even move because you were so tiny. Today, you are already one year old.
+
+<br><br>
+
+You may not remember these moments, but I will. I will remember your first smile, your tiny fingers holding my hand, your little laughs, and the happiness you bring to everyone around you. These are memories I will carry in my heart forever.
+
+<br><br>
+
+Jyotiraditya, I don't know what kind of man you will become one day. I don't know where life will take you. But I do know one thing: no matter how much you grow, no matter how old you become, you will always be my little brother, and a piece of my heart will always belong to you.
+
+<br><br>
+
+I hope life is kind to you. I hope your dreams are bigger than your fears. I hope you always find reasons to smile. And whenever life becomes difficult, I hope you remember that your big brother will always be standing beside you.
+
+<br><br>
+
+You are not just my brother. You are one of the greatest blessings God has ever given me.
+
+<br><br>
+
+Happy 1st Birthday, my precious Jyotiraditya. ❤️
+
+<br><br>
+
+<b>"If I could give you one gift today, it would be the ability to see yourself through my eyes—so you would know just how deeply you are loved."</b>
+
+<br><br>
+
+With all my love, today and forever,
+
+<br><br>
+
+❤️ Your Big Brother ❤️
+
+</div></div><script>
 
 function playMusic(){
 document.getElementById("music").play();
@@ -204,7 +221,6 @@ f.className="firework";
 f.style.left=Math.random()*100+"vw";
 f.style.top=Math.random()*70+"vh";
 f.style.background=`hsl(${Math.random()*360},100%,60%)`;
-
 document.body.appendChild(f);
 
 setTimeout(()=>{
@@ -213,7 +229,5 @@ f.remove();
 
 },300);
 
-</script>
-
-</body>
+</script></body>
 </html>
